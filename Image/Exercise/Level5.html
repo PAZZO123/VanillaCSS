@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="#">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container2{
+    height: 100vh;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(12,1fr);
+    font-size: 1.4em;
+
+    grid-template-areas: "a a a a  a a a a  a a a a"
+    "c c b b  b b b b  b b e e "
+     "c c d d  d d d d  d d e e "
+     "c c d d  d d d d  d d e e "
+     "c c d d  d d d d  d d e e "
+     "f f f f   f f f f  f f f f";
+}[class^="item"] {
+  
+    display: grid;
+    place-items: center;
+   
+     border: 2px solid red;
+
+}
+.item-1{
+grid-area: a;
+}
+.item-2{
+   grid-area: b; 
+}
+.item-3{
+    grid-area: c;
+    
+}
+.item-4{
+    grid-area: d;
+    
+}
+.item-5{
+    grid-area: e;
+    
+}
+.item-6{
+    grid-area: f;
+    
+}
+    </style>
+</head>
+<body>
+   <div class="container2">
+        <div class="item item-1">  A</div>
+        <div class="item item-2">B </div>
+        <div class="item item-3"> C</div> 
+         <div class="item item-4"> D</div> 
+          <div class="item item-5"> E</div> 
+          <div class="item item-6"> F</div> 
+        
+    </div>
+</body>
+</html>

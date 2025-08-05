@@ -1,0 +1,37 @@
+.item-1 {
+  grid-area: header;
+  background-color: lightblue;
+  /* place-self: end stretch; */
+    
+}
+.item-2 {
+  grid-area: main;
+  background-color: lightpink;
+}
+.item-3 {
+  grid-area: sidebar;
+  background-color: lightslategray;
+  
+}
+.item-4 {
+  grid-area: footer;
+  background-color: lightskyblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    /* row-gap: 10px;
+    column-gap:15px; */
+    /* justify-items: center; */
+    place-items: stretch;
+    /* justify-content: space-evenly; */
+    align-content: space-evenly;
+    place-content: stretch;
+    height: 100vh;
+}
