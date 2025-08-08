@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLex</title>
+    <style>
+        :root {
+           mobile:480px;
+           tablet:780Px;
+           desktop:1440px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            gap:20px;
+            padding: 20px;
+           
+        
+        }
+        .container  div{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+          
+        }
+        .block{
+            display: flex;
+            float: row;
+            justify-content: center;
+            row-gap: 10px;
+            gap: 20px;
+            height: (100vh -80px)/3;
+           
+
+        }
+        .block div{
+            display: flex;
+            flex-basis: (100%)/3;
+              background-color: cadetblue;
+                 border: 2px solid black;
+                
+                 border-radius: 10px;
+                 justify-content: center;
+                 align-items: center;
+                 
+        }
+        @media all and (max-width:500px){
+            .block {
+            display: flex;
+            flex-direction: column;
+                
+         
+            max-height: 100vh;
+           flex-grow: 1;
+            gap: 20px;
+
+        }
+   
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block"><div>A</div>
+        <div>B</div>
+        <div>C</div></div>
+       <div class="block">
+         <div>D</div>
+        <div>E</div>
+        <div>F</div>
+       </div>
+        <div class="block">
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        </div>
+    </div>
+</body>
+</html>
